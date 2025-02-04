@@ -16,7 +16,9 @@ export type Convidado = {
 export type Entrada = {
     tipo: "Gratuita" | "Paga",
     categoria: string,
-    quantidade: number,
+    quantidade_limitada: boolean,
+    num_maximo_entradas?: number,
+    num_inscricoes: number,
     expira: boolean,
     valdiade_inicio?: string,
     validade_fim?: string, 
@@ -30,5 +32,6 @@ export type Evento = {
     atividades: Array<Atividade>,
     formato: "Online" | "Presencial" | "Híbbrido",
     convidados: Array<Convidado>,
+    entradas: Array<Entrada>,
 }
 

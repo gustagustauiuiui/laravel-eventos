@@ -1,7 +1,7 @@
 import { Evento } from "@/Features/Evento/Evento";
 import Calendar from "./Icons/Calendar";
 
-export default function EventoSlide({ evento }: Evento) {
+export default function EventoSlide({ evento }: {evento: Evento}) {
 
     return (
         <div className="w-full flex flex-col items-center justify-center">

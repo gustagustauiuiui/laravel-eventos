@@ -50,7 +50,7 @@ export function EventoAtividades({ atividades }: { atividades: Array<Atividade>;
                             className="px-2 py-2.5 border-2 border-zinc-100 hover:border-emerald-400 rounded-md duration-200 cursor-pointer flex items-center justify-between text-zinc-600"
                         >
                             <p>{atividade?.titulo}</p>
-                            <p className="whitespace-nowrap mr-1 text-sm ">{atividade?.horario_inicio} - {atividade?.horario_fim}</p>
+                            <p className="whitespace-nowrap ml-2 text-sm font-normal">{atividade?.horario_inicio} - {atividade?.horario_fim}</p>
                         </div>
                     ))}
                 </div>
